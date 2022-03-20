@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_YT-X705F.mk
+     $(LOCAL_DIR)/omni_YT_X705F.mk

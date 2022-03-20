@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-export TARGET=YT-X705F
+export TARGET=YT_X705F
 
-add_lunch_combo omni_YT-X705F-userdebug
-add_lunch_combo omni_YT-X705F-eng
+add_lunch_combo omni_YT_X705F-userdebug
+add_lunch_combo omni_YT_X705F-eng

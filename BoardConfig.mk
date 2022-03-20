@@ -16,7 +16,16 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lenovo/YT-X705F
+
+DEVICE_PATH := device/lenovo/YT_X705F
+
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+TARGET_BOOTLOADER_BOARD_NAME := SDM439
+
+# Platform
+TARGET_BOARD_PLATFORM := sdm439
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -35,9 +44,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := YT-X705F
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -66,7 +72,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/lenovo/YT-X705F
+TARGET_KERNEL_SOURCE := kernel/lenovo/YT_X705F
 TARGET_KERNEL_CONFIG := YT-X705F_defconfig
 
 # Platform
@@ -78,8 +84,13 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
-TW_THEME := lanscape_hdpi
+TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+# Encryption support
+TW_INCLUDE_CRYPTO := true
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true

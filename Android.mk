@@ -18,6 +18,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), YT-X705F)
+ifeq ($(TARGET_DEVICE), YT_X705F)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
