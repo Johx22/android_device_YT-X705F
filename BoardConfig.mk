@@ -87,13 +87,10 @@ PLATFORM_VERSION := 16.1.0
 BOARD_USES_QCOM_HARDWARE := true
 
 # TWRP Configuration
-TW_THEME := landscape_hdpi
-TW_ROTATION := 90
+TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_USE_TOOLBOX := true
-RECOVERY_TOUCHSCREEN_SWAP_XY := true
-RECOVERY_TOUCHSCREEN_FLIP_Y := true
 TW_HAS_EDL_MODE := true
 
 # Encryption support
