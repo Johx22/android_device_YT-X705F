@@ -17,14 +17,8 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
-
-# Inherit from YT-X705F device
-$(call inherit-product, device/lenovo/YT_X705F/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -35,3 +29,5 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 PRODUCT_NAME := omni_YT_X705F
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := lenovo
+PRODUCT_MODEL := Lenovo YT-X705F
+PRODUCT_MANUFACTURER := Lenovo
