@@ -15,8 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-export TARGET_DEVICE_ALT="YT-X705F, YT-X705L, YT-X705X"
-export OF_TARGET_DEVICES="YT-X705F, YT-X705L, YT-X705X"
+
 export FOX_R11="1"
 export FOX_VERSION="R11.1"
 export ALLOW_MISSING_DEPENDENCIES=true
