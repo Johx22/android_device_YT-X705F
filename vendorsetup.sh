@@ -15,7 +15,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-export TARGET=YT_X705F
+export TARGET_DEVICE_ALT="YT-X705F, YT-X705L, YT-X705X"
+export OF_TARGET_DEVICES="YT-X705F, YT-X705L, YT-X705X"
+export FOX_R11="1"
+export FOX_VERSION="R11.1"
+export ALLOW_MISSING_DEPENDENCIES=true
+export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
+export OF_DISABLE_DM_VERITY_FORCED_ENCRYPTION=1
+export FOX_BUILD_TYPE="Beta"
 
 add_lunch_combo omni_YT_X705F-userdebug
 add_lunch_combo omni_YT_X705F-eng

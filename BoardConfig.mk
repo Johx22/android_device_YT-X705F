@@ -72,8 +72,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/lenovo/YT_X705F
-TARGET_KERNEL_CONFIG := YT-X705F_defconfig
+BOARD_ROOT_EXTRA_SYMLINKS := /vendor/dsp:/dsp /vendor/firmware_mnt:/firmware
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
@@ -85,8 +84,10 @@ PLATFORM_VERSION := 16.1.0
 
 #TWRP specific build Flags
 BOARD_USES_QCOM_HARDWARE := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # TWRP Configuration
+RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -97,3 +98,4 @@ TW_HAS_EDL_MODE := true
 TW_INCLUDE_CRYPTO := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
