@@ -17,7 +17,7 @@
 #
 
 
-DEVICE_PATH := device/lenovo/YT_X705F
+DEVICE_PATH := device/lenovo/X705F
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -95,7 +95,7 @@ TW_USE_TOOLBOX := true
 TW_HAS_EDL_MODE := true
 
 # Encryption support
-TW_INCLUDE_CRYPTO := true
-TARGET_HW_DISK_ENCRYPTION := true
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+#TW_INCLUDE_CRYPTO := true
+#TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+#TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw

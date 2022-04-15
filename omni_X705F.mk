@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 # Device identifier. This must come after all inclusions
 
-PRODUCT_NAME := omni_YT_X705F
+PRODUCT_NAME := omni_X705F
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_MODEL := Lenovo YT-X705F

@@ -17,8 +17,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_YT_X705F.mk
+     $(LOCAL_DIR)/omni_X705F.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_YT_X705F-userdebug \
-    omni_YT_X705F-eng \
+    omni_X705F-userdebug \
+    omni_X705F-eng \

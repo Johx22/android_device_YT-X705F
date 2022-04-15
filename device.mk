@@ -16,4 +16,4 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/lenovo/YT_X705F
+LOCAL_PATH := device/lenovo/X705F
