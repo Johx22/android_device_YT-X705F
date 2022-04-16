@@ -17,7 +17,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_X705F.mk
+     $(LOCAL_DIR)/twrp_X705F.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_X705F-userdebug \
