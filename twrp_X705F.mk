@@ -21,7 +21,6 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
-$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 PRODUCT_PACKAGES += \
     qcom_decrypt \
